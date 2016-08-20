@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Justin Beaudry - Developer - @JustinNBeaudry
+    Lara Mccormick - Designer  - @laramc
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
