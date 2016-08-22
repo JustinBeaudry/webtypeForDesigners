@@ -1,0 +1,47 @@
+@import 'bourbon';
+@import 'neat';
+
+@import '_colors';
+@import '_fonts';
+@import '_grid_settings';
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $display-font;
+  color: $h-color;
+}
+
+h3 {
+  color: $h3-color;
+}
+
+span.sub-heading {
+  display: block;
+  font-family: $display-font;
+  font-style: italic;
+  color: $sub-h-color;
+
+  a, a:hover, a:active, a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+p, span {
+  font-family: $text-font;
+}
+
+p {
+  color: $link-display-color;
+}
+
+span {
+  color: $link-address-color;
+}
+
+main {
+  @include outer-container;
+
+  section {
+    @include one-third;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "webtypeForDesigners",
+  "version": "1.0.0",
+  "description": "Web Type For Designers",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustinBeaudry/webtypeForDesigners.git"
+  },
+  "author": "Justin Beaudry <beaudry.justin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JustinBeaudry/webtypeForDesigners/issues"
+  },
+  "homepage": "webtypefordesigners.com",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "node-bourbon": "^4.2.8",
+    "node-neat": "^1.7.2"
+  }
+}
