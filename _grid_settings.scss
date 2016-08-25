@@ -7,9 +7,21 @@ $small: 400px;
 $medium: 835px;
 $large: 1100px;
 
-$small-screen: new-breakpoint(max-width em($small — 1) 2);
+/**
+  Basically we want a grid that supports size varieties of:
+  0-399px as $small-screen
+  400-835px as $medium-screen
+  836-1100px as $large-screen
+  1100-Infinity as $xl-screen
+**/
+
+$__small: strip-units($small) - 1;
+$__medium: strip-units($medium) + 1;
+$__large: strip-units($large) - 1;
+
+$small-screen: new-breakpoint(max-width em($__small) 2);
 $medium-screen: new-breakpoint(min-width em($small) max-width em($medium) 4);
-$large-screen: new-breakpoint(min-width em($medium + 1) max-width em($large — 1) 8);
+$large-screen: new-breakpoint(min-width em($__medium) max-width em($__large) 8);
 $xl-screen: new-breakpoint(min-width em($large));
 
 @mixin one-quarter {
