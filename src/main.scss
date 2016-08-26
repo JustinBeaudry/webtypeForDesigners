@@ -40,9 +40,13 @@ header {
 
 footer {
   margin-top: 2em;
+  @include link($link-address-color);
  p {
    margin: 0;
    @include link($link-address-color);
+ }
+ section {
+   margin-top: 1em;
  }
 }
 
