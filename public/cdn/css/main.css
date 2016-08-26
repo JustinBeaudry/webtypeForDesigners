@@ -428,6 +428,17 @@ header, footer {
     clear: both;
     content: "";
     display: table; }
+  header aside, footer aside {
+    float: right; }
+    header aside a, footer aside a {
+      color: #949597;
+      text-decoration: none; }
+      header aside a:visited, footer aside a:visited {
+        color: #949597; }
+      header aside a:hover, footer aside a:hover {
+        color: #949597; }
+      header aside a:active, footer aside a:active {
+        color: #949597; }
 
 header {
   margin-bottom: 1em; }
@@ -436,9 +447,15 @@ footer {
   margin-top: 2em; }
   footer p {
     margin: 0; }
-    footer p a, footer p a:hover, footer p a:active, footer p a:visited {
-      color: inherit;
+    footer p a {
+      color: #949597;
       text-decoration: none; }
+      footer p a:visited {
+        color: #949597; }
+      footer p a:hover {
+        color: #949597; }
+      footer p a:active {
+        color: #949597; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
@@ -472,9 +489,15 @@ span.sub-heading {
   font-style: italic;
   font-size: 1.6em;
   color: #9994b0; }
-  span.sub-heading a, span.sub-heading a:hover, span.sub-heading a:active, span.sub-heading a:visited {
-    color: inherit;
+  span.sub-heading a {
+    color: #949597;
     text-decoration: none; }
+    span.sub-heading a:visited {
+      color: #949597; }
+    span.sub-heading a:hover {
+      color: #949597; }
+    span.sub-heading a:active {
+      color: #949597; }
 
 p, span {
   font-family: "San Francisco", sans-serif; }
@@ -544,3 +567,9 @@ main {
     main section ul li a {
       color: #949597;
       text-decoration: none; }
+      main section ul li a:visited {
+        color: #949597; }
+      main section ul li a:hover {
+        color: #949597; }
+      main section ul li a:active {
+        color: #949597; }

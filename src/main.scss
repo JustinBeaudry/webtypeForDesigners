@@ -6,12 +6,32 @@
 @import '_fonts';
 @import '_grid_settings';
 
+@mixin link ($color) {
+  a {
+    color: $color;
+    text-decoration: none;
+    &:visited {
+      color: $color;
+    }
+    &:hover {
+      color: $color;
+    }
+    &:active {
+      color: $color;
+    }
+  }
+}
+
 body {
   margin: 1em;
 }
 
 header, footer {
   @include outer-container;
+  aside {
+    float: right;
+    @include link($link-address-color);
+  }
 }
 
 header {
@@ -22,10 +42,7 @@ footer {
   margin-top: 2em;
  p {
    margin: 0;
-   a, a:hover, a:active, a:visited {
-     color: inherit;
-     text-decoration: none;
-   }
+   @include link($link-address-color);
  }
 }
 
@@ -67,10 +84,7 @@ span.sub-heading {
   font-size: 1.6em;
   color: $sub-h-color;
 
-  a, a:hover, a:active, a:visited {
-    color: inherit;
-    text-decoration: none;
-  }
+  @include link($link-address-color);
 }
 
 p, span {
@@ -89,9 +103,8 @@ main {
     ul {
       list-style: none;
       margin-bottom: 3em;
-      li a {
-        color: $link-address-color;
-        text-decoration: none;
+      li {
+        @include link($link-address-color);
       }
     }
   }
